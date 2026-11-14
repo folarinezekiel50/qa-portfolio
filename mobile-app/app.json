@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "QA Bank",
+    "slug": "qa-bank",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.qaportfolio.bank",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSAppTransportSecurity": { "NSAllowsLocalNetworking": true }
+      }
+    },
+    "android": {
+      "package": "com.qaportfolio.bank"
+    },
+    "plugins": [
+      "./plugins/withDetox"
+    ]
+  }
+}

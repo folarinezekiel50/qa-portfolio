@@ -1,0 +1,18 @@
+{
+  "name": "mock-bank-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-dependency Node.js mock banking API used by the mobile app and the API test framework.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": { "node": ">=20" }
+}

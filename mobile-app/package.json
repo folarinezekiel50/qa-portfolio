@@ -1,0 +1,49 @@
+{
+  "name": "qa-bank-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React Native (Expo) banking demo app built to practise manual and automated mobile QA.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "prebuild": "expo prebuild --clean",
+    "mock-server": "npm --prefix ../mock-server start",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "e2e:build:android": "detox build -c android.emu.release",
+    "e2e:test:android": "detox test -c android.emu.release",
+    "e2e:build:ios": "detox build -c ios.sim.release",
+    "e2e:test:ios": "detox test -c ios.sim.release"
+  },
+  "dependencies": {
+    "expo": "~58.0.0",
+    "react": "19.3.0",
+    "react-native": "~0.88.0",
+    "react-native-safe-area-context": "*"
+  },
+  "devDependencies": {
+    "@testing-library/react-native": "^13.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "~19.3.0",
+    "babel-preset-expo": "~58.0.0",
+    "detox": "^20.0.0",
+    "jest": "~30.5.2",
+    "jest-expo": "~58.0.0",
+    "react-test-renderer": "19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/e2e/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ]
+  }
+}

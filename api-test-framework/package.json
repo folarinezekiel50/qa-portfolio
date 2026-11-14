@@ -1,0 +1,19 @@
+{
+  "name": "bank-api-test-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript API test automation framework built on node:test with custom HTML reporting.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/mkdir-reports.mjs && node --import tsx --test --test-concurrency=1 --test-reporter=spec --test-reporter-destination=stdout --test-reporter=./src/reporters/html-reporter.ts --test-reporter-destination=reports/api-report.html --test-reporter=junit --test-reporter-destination=reports/junit.xml \"tests/**/*.test.ts\"",
+    "test:local": "tsx scripts/run-with-server.ts",
+    "test:auth": "node --import tsx --test \"tests/auth.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": { "node": ">=22" }
+}
