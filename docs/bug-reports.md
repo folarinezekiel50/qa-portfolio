@@ -1,6 +1,6 @@
 # Bug Log – QA Bank
 
-These are real defects in this codebase, found by reviewing the code against the requirements and by unit/API testing. **Before an interview, reproduce each one yourself on a simulator and attach your own screenshots** – you should be able to talk through every report in detail.
+These are real defects in this codebase, found by reviewing the code against the requirements and by unit/API testing. 
 
 | ID | Title | Severity | Priority | Status |
 |----|-------|----------|----------|--------|
