@@ -65,4 +65,4 @@ Running the app and Detox tests: see [mobile-app/README.md](mobile-app/README.md
 
 ## About me
 
-[Your Name] – QA engineer · [LinkedIn] · [Email]
+Ezekiel Folarin – Computer Science Graduate · folarinezekiel50@gmail.com
